@@ -56,3 +56,11 @@ def test_filtrar_livros_retorna_informacao_completa():
     assert resultado == [
         {"titulo": "O Hobbit", "autor": "J.R.R. Tolkien", "genero": "Fantasia", "preco": 49.90, "data_publicacao": "1937"},
     ]
+
+def test_filtrar_livros_titulo():
+    criterios_filtro = {"titulo": "O Hobbit"}
+    resultado = filtrar_livros(livros=livros_disponiveis, criterios=criterios_filtro)
+    assert resultado == [
+        {"titulo": "O Hobbit", "autor": "J.R.R. Tolkien", "genero": "Fantasia", "preco": 49.90,
+         "data_publicacao": "1937"},
+    ]

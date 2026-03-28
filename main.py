@@ -13,11 +13,15 @@ def index():
         # Recolhe os critérios preenchidos no formulário
         autor = request.form.get("autor")
         genero = request.form.get("genero")
+        titulo = request.form.get("titulo")
 
-        if autor: # permite filtrar apenas por autor, apenas por gênero ou por ambos.
+        if autor: # permite filtrar apenas por autor, apenas por gênero, apenas por título ou por todos os campos.
             criterios_filtro["autor"] = autor
         if genero:
             criterios_filtro["genero"] = genero
+        if titulo:
+            criterios_filtro["titulo"] = titulo
+
 
         # Filtro
         resultados = filtrar_livros(livros=livros_disponiveis, criterios=criterios_filtro)
