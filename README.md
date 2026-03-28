@@ -1,5 +1,3 @@
-# Lab-TDD
-
 # Lab-TDD — Livraria com Filtro de Livros
 
 Projeto desenvolvido no âmbito da disciplina de **Engenharia de Software**, com o objetivo de aplicar o método **Test-Driven Development (TDD)** na implementação de uma funcionalidade de filtragem de livros.
@@ -30,8 +28,8 @@ Lab-TDD/
 ## Funcionalidades
 
 - Filtrar livros por **autor**
-- Filtrar livros por **género**
-- Filtrar livros por **autor e género** simultaneamente
+- Filtrar livros por **gênero**
+- Filtrar livros por **autor e gênero** simultaneamente
 - Retornar **informação completa** dos livros filtrados (título, autor, género, preço e data de publicação)
 - Interface web simples via **Flask**
 
