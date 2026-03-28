@@ -27,10 +27,11 @@ Lab-TDD/
 
 ## Funcionalidades
 
+- Filtrar livros por **título**
 - Filtrar livros por **autor**
 - Filtrar livros por **gênero**
-- Filtrar livros por **autor e gênero** simultaneamente
-- Retornar **informação completa** dos livros filtrados (título, autor, género, preço e data de publicação)
+- Filtrar livros por múltiplos critérios simultaneamente
+- Retornar **informação completa** dos livros filtrados (título, autor, gênero, preço e data de publicação)
 - Interface web simples via **Flask**
 
 ---
@@ -44,6 +45,7 @@ Lab-TDD/
 | 3 | `test_filtrar_livros_por_autor()` | Filtra corretamente por autor |
 | 4 | `test_filtrar_livros_por_genero_inexistente()` | Gênero inexistente retorna lista vazia |
 | 5 | `test_filtrar_livros_retorna_informacao_completa()` | Retorna todos os atributos do livro filtrado |
+| 6 | `test_filtrar_livros_por_titulo()` | Filtra corretamente por título |
 
 ---
 
@@ -67,7 +69,7 @@ py -m pytest test_livro.py -v -s
 py main.py
 ```
 
-Acede a http://127.0.0.1:5000 no browser.
+Acesse http://127.0.0.1:5000 no browser.
 
 ---
 
@@ -86,4 +88,3 @@ O desenvolvimento seguiu rigorosamente o ciclo TDD:
 - **Red** — Escrever um teste que falha
 - **Green** — Implementar o mínimo de código para o teste passar
 - **Refactor** — Melhorar o código sem quebrar os testes
-
