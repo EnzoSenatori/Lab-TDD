@@ -7,4 +7,8 @@ def filtrar_livros(livros, criterios):
             if livro.get(chave) == valor:
                 livros_filtrados.append(livro)
         resultado = livros_filtrados
+
+        # retornando livros no terminal
+        for livro in resultado:
+            print(livro)
     return resultado
